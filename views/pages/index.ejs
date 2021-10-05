@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+
+  <body class="">
+    <header><%- include('../partials/header'); %></header>
+    <form method="" action="" style="margin: 1em">
+      <fieldset style="margin: 1em">
+        tittle
+        <input id="tittle" name="tittle" type="text" placeholder="tittle" />
+        price
+        <input id="price" name="price" type="number" placeholder="price" />
+        thumbail<input
+          id="thumbail"
+          name="thumbail"
+          type="text"
+          placeholder="thumbail"
+        />
+      </fieldset>
+    </form>
+    <button class="boton" onClick="productSend()">send</button>
+    <div class="container">
+      <ul class="grid lane">
+        <li>Nombre</li>
+        <li>Precio</li>
+        <li>Imagen</li>
+      </ul>
+      <ul id="ul">
+        <!-- aca entra el js-->
+      </ul>
+    </div>
+  </body>
+  <script src="/index.js"></script>
+</html>

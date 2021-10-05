@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./publicIndex.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ruta raiz</title>
+</head>
+<body class="container">
+        <h1>Chat</h1>
+        <br>
+        <form onsubmit='return false'>
+            <fieldset >
+                <input id="mail" type="mail" placeholder="email">
+                <br>
+               <input id="text" type="text" placeholder="text">
+            </fieldset><br>
+            <button onClick="EnviarMsj()" id="chatButton">Enviar</button>
+        </form>
+        <br>
+        <div id="chatSection">
+<!--      insert  from js      -->
+        </div>
+</body>
+</html> 
